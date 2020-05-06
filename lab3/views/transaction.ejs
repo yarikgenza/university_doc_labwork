@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <title>Transaction list</title>
+</head>
+
+<body>
+  <div">
+    <ul>
+      <% for(var i = 0; i < transactions.length; i++) { %>
+      <li>Transaction "<%= transactions[i].title %>" with amount: <%= transactions[i].amount %></li>
+      <% } %>
+    </ul>
+
+    <form>
+      <form>
+        <table>
+          <tr>
+            <td>Title</td>
+            <td><input type="text" name="title"></td>
+          </tr>
+          <tr>
+            <td>Amount</td>
+            <td><input type="number" name="amount"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="submit" value="Save"></td>
+          </tr>
+        </table>
+      </form>
+    </form>
+    </div>
+</body>
+
+</html>
